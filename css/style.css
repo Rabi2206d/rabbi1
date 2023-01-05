@@ -1,0 +1,393 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+#logo {
+    font-size: 30px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.3) ,rgba(0, 255, 157, 0.3)), url('../images/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75% ,0 0);
+    position: relative;
+}
+.header:before
+{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .4;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16f67b 100%);
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .1;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16f67b 100%);
+}
+.nav-item a{
+color: white!important;
+font-weight: bold;
+
+}
+#header-section
+{
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    position: relative;
+    color: white   ;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    
+
+}
+.center-div h3{
+    font-size: 35px;
+}
+.center-div p {
+    font-size: .9em;
+    padding: 10px 0 20px 0;
+    font-weight: 400;
+    color: white;
+}
+.header-button{
+    padding-top: 20px;
+}
+.header-button a{
+    border: 2px solid white;
+    border-radius: 10px;
+    color: rgb(6, 126, 32);
+    background-color: rgba(255, 255, 255, 0.823);
+    outline: none;
+    margin: 0 5px;
+    padding: 12px 35px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    transition: .2s;
+}
+.header-button a:hover {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+    font-size: 15px;
+}
+/* service css start  */
+.service-heading h3{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.service{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    
+   
+
+}
+.icon{
+    background: #fff;
+    border: medium none;
+    padding: 50px;
+    transition: 0.3s;
+    
+}
+.icon a i {
+    color: black;
+    font-size: 50px;
+    padding: 20px;
+
+}
+.icon:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+    background:rgb(0, 185, 28);
+    color: white;
+    transform: translateY(-20px);
+
+}
+.icon:hover a i {
+    color: white;
+}
+.names h3{
+    font-size: 20px;
+}
+.iconic{
+    margin-top: -40px;
+}
+.iconic p{
+    font-size: 13px;
+    margin-left: 50px;
+    
+}
+.iconic h3{
+    font-size: 20px;
+    margin-left: 50px;
+    
+}
+.cont h1{
+    font-size: 28px;
+}
+.rates{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+.rates:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background:linear-gradient( 160deg,rgba(0, 197, 0, 0.83) 55%,#fff 0%);
+} 
+.money{
+    font-size: 40px;
+    line-height: 1;
+    
+}
+.card{
+    transition: 0.4s ease;
+}
+.card-header{
+    font-size: 16px;
+    font-weight: bold;
+    background:#fff !important;
+    padding: 25px 9px !important;
+}
+.card-body{
+    padding: 30px 0px !important
+}
+.card-body li{
+    /* margin: 10px 0; */
+    font-weight: bold;
+    font-size: 10px;
+    color: #606060;
+}
+.card-footer
+{
+    background: white !important;
+    padding: 30px 0 !important;
+
+}
+.card-footer a{
+    border: 2px solid rgb(6, 126, 32);;
+    border-radius: 100px;
+    color: rgb(6, 126, 32);
+    background-color: rgba(255, 255, 255, 0.823);
+    outline: none;
+    margin: 0 5px;
+    padding: 12px 35px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    transition: .2s;
+}
+.card:hover .card-footer a {
+    color: rgb(255, 255, 255);
+    background: rgb(6, 126, 32);;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+    font-size: 15px;
+}
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+
+}
+.card:hover .card-header, .card:hover .money{
+    color: rgb(6, 126, 32);;
+}
+.second-card{
+    transform: translateY(-20px);
+}
+
+.team{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+    width: 100%;
+    height: 300px;
+    
+}
+.box:hover{
+    background: rgb(0, 218, 0);
+}
+.box a{
+    position: relative;
+
+}
+.box h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+
+}
+.box h3{
+    font-size: 18px;
+}
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.box:hover h1{
+     color: white;
+}
+.box:hover h3{
+    color: white;
+}
+#headi{
+    font-size: 30px;
+}
+#par{
+    font-size: 13px;
+    padding: 20px;
+}
+.contact{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    
+    
+}
+.contact:before{
+    content: "";
+    position: absolute;
+    margin-top: -50px;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background:linear-gradient( 330deg,rgba(0, 189, 0, 0.83) 55%,#fff 0%);
+}
+#row{
+    margin-top: 120px;
+}
+.footerSection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: rgb(44, 181, 40);
+    position: relative;
+
+}
+.footerSection h3{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.footerSection p{
+    color: white;
+  
+
+}
+.footerSection li a{
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.list{
+    margin-left: 70px;
+}
+.list li{
+    margin-left: 50px;
+}
+
+
+
+@media(max-width:990px){
+    .team{
+        margin-top: 600px;
+    }
+    .rates{
+        margin-top: -50px;
+    }
+    .card{
+        width: 80%;
+        margin-left: 60px;
+    }
+    .box{
+        width: 80%;
+        margin-left: 60px;
+    }
+    .contact{
+        margin-top: 600px;
+    }
+   
+   
+}
+@media(max-width:767px) {
+    .list{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .list li{
+        margin-left: 0;
+    }
+}
+@media(max-width:575px){
+    .team{
+        margin-left: -20px;
+    }
+    .card{
+       margin-left: 10px;
+       width: 100%;
+    }
+}
+
